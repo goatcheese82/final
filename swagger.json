@@ -13,6 +13,9 @@
   "paths": {
     "/events/": {
       "get": {
+        "tags": [
+          "Events"
+        ],
         "description": "",
         "responses": {
           "200": {
@@ -24,6 +27,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Events"
+        ],
         "description": "",
         "responses": {
           "200": {
@@ -34,6 +40,9 @@
     },
     "/events/{id}": {
       "get": {
+        "tags": [
+          "Events"
+        ],
         "description": "",
         "parameters": [
           {
@@ -53,6 +62,9 @@
         }
       },
       "patch": {
+        "tags": [
+          "Events"
+        ],
         "description": "",
         "parameters": [
           {
@@ -69,6 +81,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Events"
+        ],
         "description": "",
         "parameters": [
           {

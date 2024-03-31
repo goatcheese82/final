@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 3000
 
 
 //ROUTES
-app.use('/events', events);
+app.use('/events', /*#swagger.tags=['Events']*/ events);
 app.use('/users', users);
 app.use('/timers', timers);
 app.use('/routines', routines);
