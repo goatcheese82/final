@@ -1,18 +1,18 @@
 import express from "express";
 import indexController from "../controllers/indexController.mjs";
-import swaggerUi from "swagger-ui-express";
-import swaggerDocument from "../swagger.json" assert { type: "json" };
 import users from './users.mjs';
 import events from './events.mjs';
 import timers from './timers.mjs';
 import routines from './routines.mjs';
 import auth from './auth.mjs';
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "../swagger.json" assert { type: "json" };
 
 const router = express.Router();
 
 /*** Docs */
 router.use('/api-docs', swaggerUi.serve );
-router.use('/api-docs', swaggerUi.setup(swaggerDocument));
+router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 /*** Home */
 router.get('/',  /*#swagger.tags=['Home']*/ indexController.getIndex);
